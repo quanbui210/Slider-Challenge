@@ -49,7 +49,7 @@
   left: 50%;
   top: 50%;
   transform: translate(8%, -50%);
-
+  color: rgb(163, 89, 170) !important;
   margin-top: 60px;
 }
 

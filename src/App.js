@@ -70,19 +70,23 @@ console.log(tasks[0].time)
 
 const marks = [
   {
-    value: 6,
-    label: '6',
+    value: 8,
+    label: '8',
   },
   {
-    value: 14,
+    value: 12,
     label: '12',
   },
   {
-    value: 17,
-    label: '18',
+    value: 16,
+    label: '16',
   },
   {
     value: 20,
+    label: '20',
+  },
+  {
+    value: 24,
     label: '24',
   },
 ];
@@ -191,7 +195,7 @@ const value4 = [9, 16]
     setChecked(!checked); 
     setDisabled(!checked);
   }
-  
+  const color = checked === false ? 'rgb(119, 119, 119) !important' : 'rgb(89, 158, 170) !important';
 
   return (
     <div className="app-container">
@@ -202,6 +206,7 @@ const value4 = [9, 16]
        <Checkbox defaultChecked color="success"  onChange={checkboxChangeHandler}/>
       </form>
       <Slider
+        style={{color : {color}}}
         className='slider'
         aria-label="Hour"
         defaultValue={6}
@@ -234,7 +239,6 @@ const value4 = [9, 16]
         marks={marks2}
         min={6}
         max={24}
-        disabled={disable}
         value={value2}
       />
       </div>
@@ -250,7 +254,6 @@ const value4 = [9, 16]
         marks={marks3}
         min={6}
         max={24}
-        disabled={disable}
         value={value3}
       />
       </div>
@@ -266,7 +269,6 @@ const value4 = [9, 16]
         marks={marks4}
         min={6}
         max={24}
-        disabled={disable}
         value={value4}
       />
       </div>
