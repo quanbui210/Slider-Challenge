@@ -104,6 +104,38 @@ const marks2 = [
   }
 ];
 
+const marks4 = [
+  {
+    value: 7,
+    label: <SportsBaseballIcon className="icon-play2"/>,
+
+  },
+  {
+    value: 18,
+    label: <SportsSoccerIcon className="icon-play2"/>,
+  },
+  {
+    value: 23,
+    label: <KayakingIcon className="icon-play2"/>,
+  }
+];
+
+const marks3 = [
+  {
+    value: 10,
+    label: <SportsBaseballIcon className="icon-play2"/>,
+
+  },
+  {
+    value: 22,
+    label: <SportsSoccerIcon className="icon-play2"/>,
+  },
+  {
+    value: 6,
+    label: <KayakingIcon className="icon-play2"/>,
+  }
+];
+
 
 function App() {
 const [checked, setChecked] = useState(false); 
@@ -117,6 +149,10 @@ const [icon, setIcon] = useState('')
 
 
 const value2 = [7, 13]
+const value3 = [13, 20]
+const value4 = [9, 16]
+
+
 
 
 
@@ -186,7 +222,9 @@ const value2 = [7, 13]
     </Box>
     <Box sx={{ width: 300 }} className="container">
       <h3 >Other people 's calendar (view only)</h3>
-       <p className="text-label" style={{fontWeight: 'bold', fontSize: '18px'}}>Monday</p> 
+      <div>
+        <p className="text-label" style={{fontWeight: 'bold', fontSize: '18px'}}>Monday</p> 
+      
       <Slider
         className='slider2'
         defaultValue={6}
@@ -199,6 +237,39 @@ const value2 = [7, 13]
         disabled={disable}
         value={value2}
       />
+      </div>
+      <div>
+        <p className="text-label" style={{fontWeight: 'bold', fontSize: '18px'}}>Tuesday</p> 
+      
+      <Slider
+        className='slider2'
+        defaultValue={6}
+        getAriaValueText={valuetext}
+        valueLabelDisplay="on"
+        step={1}
+        marks={marks3}
+        min={6}
+        max={24}
+        disabled={disable}
+        value={value3}
+      />
+      </div>
+      <div>
+        <p className="text-label" style={{fontWeight: 'bold', fontSize: '18px'}}>Wednesday</p> 
+      
+      <Slider
+        className='slider2'
+        defaultValue={6}
+        getAriaValueText={valuetext}
+        valueLabelDisplay="on"
+        step={1}
+        marks={marks4}
+        min={6}
+        max={24}
+        disabled={disable}
+        value={value4}
+      />
+      </div>
       </Box>
       </div>
   );
