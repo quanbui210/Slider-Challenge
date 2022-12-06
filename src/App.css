@@ -82,7 +82,7 @@
 
 
 .icon-play2 {
-  font-size: 18px !important;
+  font-size: 19px !important;
 }
 
 h3 {
@@ -98,3 +98,9 @@ h3 {
   transform: translate(36%, 320%);
 }
 
+.pump:hover {
+    cursor: pointer;
+    transform: translateY(-6px);
+    transition: all .2s ease-in-out 0s;
+    -webkit-transform: all .4s ease-in-out 0s;
+}

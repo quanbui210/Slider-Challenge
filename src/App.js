@@ -9,6 +9,9 @@ import SportsTennisIcon from '@mui/icons-material/SportsTennis';
 import PoolIcon from '@mui/icons-material/Pool';
 import KayakingIcon from '@mui/icons-material/Kayaking';
 import SportsBaseballIcon from '@mui/icons-material/SportsBaseball';
+import DeleteIcon from '@mui/icons-material/Delete';
+import IconButton from '@mui/material/IconButton';
+import Tooltip from '@mui/material/Tooltip';
 
 function valuetext(value) {
   return `${value}`;
@@ -40,30 +43,30 @@ const tasks = [
 ];
 
 
-const tasks2 = [
-  {
-    name: 'Play Football',
-    time: 6,
-    icon: <SportsSoccerIcon className="icon-play"/>
-  },
-  {
-    name: 'Tennis',
-    time: 14,
-    icon: <SportsTennisIcon className="icon-play"/>
+// const tasks2 = [
+//   {
+//     name: 'Play Football',
+//     time: 6,
+//     icon: <SportsSoccerIcon className="icon-play"/>
+//   },
+//   {
+//     name: 'Tennis',
+//     time: 14,
+//     icon: <SportsTennisIcon className="icon-play"/>
 
-  },
-  {
-    name: 'Kayaking',
-    time: 17,
-    icon: <KayakingIcon className="icon-play"/>
-  },
-  {
-    name: 'Swimming',
-    time: 20,
-    icon: <PoolIcon className="icon-play"/>
+//   },
+//   {
+//     name: 'Kayaking',
+//     time: 17,
+//     icon: <KayakingIcon className="icon-play"/>
+//   },
+//   {
+//     name: 'Swimming',
+//     time: 20,
+//     icon: <PoolIcon className="icon-play"/>
 
-  },
-];
+//   },
+// ];
 
 
 console.log(tasks[0].time)
@@ -95,48 +98,82 @@ const marks = [
 const marks2 = [
   {
     value: 6,
-    label: <SportsBaseballIcon className="icon-play2"/>,
-
+    label: <Tooltip title='baseball at 6'>
+    <IconButton>
+      <SportsBaseballIcon className="icon-play2 pump" />
+    </IconButton>
+  </Tooltip>,
   },
   {
     value: 17,
-    label: <SportsSoccerIcon className="icon-play2"/>,
+    label: <Tooltip title='Football at 17'>
+    <IconButton>
+      <SportsSoccerIcon className="icon-play2 pump" />
+    </IconButton>
+  </Tooltip>,
   },
   {
     value: 18,
-    label: <KayakingIcon className="icon-play2"/>,
+    label: <Tooltip title='Kayaking at 18'>
+    <IconButton>
+      <KayakingIcon className="icon-play2 pump" />
+    </IconButton>
+  </Tooltip>,
   }
 ];
 
 const marks4 = [
   {
     value: 7,
-    label: <SportsBaseballIcon className="icon-play2"/>,
-
+    label: <Tooltip title='Swimming at 7'>
+    <IconButton>
+      <PoolIcon className="icon-play2 pump" />
+    </IconButton>
+  </Tooltip>,
   },
   {
     value: 18,
-    label: <SportsSoccerIcon className="icon-play2"/>,
+    label: <Tooltip title='Football at 18'>
+    <IconButton>
+      <SportsSoccerIcon className="icon-play2 pump" />
+    </IconButton>
+  </Tooltip>,
   },
   {
     value: 23,
-    label: <KayakingIcon className="icon-play2"/>,
+    label: <Tooltip title='Kayaking at 23'>
+    <IconButton>
+      <KayakingIcon className="icon-play2 pump" />
+    </IconButton>
+  </Tooltip>,
   }
 ];
 
 const marks3 = [
   {
     value: 10,
-    label: <SportsBaseballIcon className="icon-play2"/>,
+    label: <Tooltip title='baseball at 10'>
+    <IconButton>
+      <SportsBaseballIcon className="icon-play2 pump" />
+    </IconButton>
+  </Tooltip>,
 
   },
   {
     value: 22,
-    label: <SportsSoccerIcon className="icon-play2"/>,
+    label: <Tooltip title='Tennis at 22'>
+    <IconButton>
+      <SportsTennisIcon className="icon-play2 pump" />
+    </IconButton>
+  </Tooltip>,
   },
   {
     value: 6,
-    label: <KayakingIcon className="icon-play2"/>,
+    label: <Tooltip title='Kayaking at 6'>
+    <IconButton>
+      <KayakingIcon className="icon-play2 pump" />
+    </IconButton>
+  </Tooltip>,
   }
 ];
 
@@ -155,11 +192,6 @@ const [icon, setIcon] = useState('')
 const value2 = [7, 13]
 const value3 = [13, 20]
 const value4 = [9, 16]
-
-
-
-
-
 
 
 
